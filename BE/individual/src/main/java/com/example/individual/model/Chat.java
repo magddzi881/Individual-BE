@@ -52,6 +52,11 @@ public class Chat {
     @Column(name = "lastly_viewed", nullable = false)
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date lastlyViewed;
+    /**
+     *
+     */
+    @Column(name = "seen", nullable = false)
+    private Boolean seen;
 
     /**
      * The date and time when the last message was sent in the chat.
@@ -105,6 +110,12 @@ public class Chat {
         this.id = id;
     }
 
+    public boolean getSeen() {
+        return seen;
+    }
+    public void setSeen(boolean seen) {
+        this.seen = seen;
+    }
     /**
      * Gets the username of the first chat participant.
      *

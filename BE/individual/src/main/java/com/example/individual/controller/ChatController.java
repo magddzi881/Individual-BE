@@ -4,6 +4,7 @@ import com.example.individual.model.Chat;
 import com.example.individual.model.Message;
 import com.example.individual.repository.ChatRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -150,27 +151,24 @@ public class ChatController {
     }
 
 
-    /**
-     * Partially update an existing chat by ID (e.g., update the last viewed time).
-     *
-     * @param id          The unique ID of the chat to be updated.
-     * @param updatedChat The partial Chat object with updated fields.
-     * @return ResponseEntity containing the updated Chat object if found, or a not-found response.
-     */
-    @PatchMapping("/{id}")
-    public ResponseEntity<Chat> patchChat(@PathVariable("id") int id, @RequestBody Chat updatedChat) {
-        Optional<Chat> optionalChat = chatRepository.findById(id);
-        if (optionalChat.isPresent()) {
-            Chat chat = optionalChat.get();
-            // Update specific fields of chat using values from updatedChat
-            chat.setLastlyViewed(updatedChat.getLastlyViewed());
 
-            Chat updated = chatRepository.save(chat);
-            return ResponseEntity.ok(updated);
-        } else {
-            return ResponseEntity.notFound().build();
+    @PatchMapping("/updateChatSeen")
+    public ResponseEntity<String> updateChatSeen(@RequestParam("id") int id, @RequestParam("seen") boolean seen) {
+        try {
+            Optional<Chat> chatOptional = chatRepository.findById(id);
+            if (chatOptional.isPresent()) {
+                Chat chat = chatOptional.get();
+                chat.setSeen(seen);
+                chatRepository.save(chat);
+                return ResponseEntity.ok("Chat seen updated successfully.");
+            } else {
+                return ResponseEntity.notFound().build();
+            }
+        } catch (Exception e) {
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to update chat seen: " + e.getMessage());
         }
     }
+
 
     /**
      * Delete a chat by ID.
