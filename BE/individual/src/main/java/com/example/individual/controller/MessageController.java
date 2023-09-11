@@ -75,6 +75,10 @@ public class MessageController {
         Optional<Message> optionalMessage = messageRepository.findById(id);
         return optionalMessage.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
+    @GetMapping("/findByChatId/{chatId}")
+    public List<Message> getMessagesByChatId(@PathVariable("chatId") int id) {
+        return messageRepository.findAllByChatId(id);
+    }
 
     /**
      * Create a new message.

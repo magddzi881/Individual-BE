@@ -38,4 +38,6 @@ public interface MessageRepository extends JpaRepository<Message, Integer> {
      */
     @Query("SELECT m FROM Message m WHERE (m.senderUsername = ?1 AND m.receiverUsername = ?2) OR (m.senderUsername = ?2 AND m.receiverUsername = ?1) ORDER BY m.sendTime")
     List<Message> findMessagesBetweenUsers(String username1, String username2);
+
+    List<Message> findAllByChatId(int chatId);
 }

@@ -22,6 +22,9 @@ public class Message {
     @Column(name = "id")
     private int id;
 
+    @Column(name = "chat_id", nullable = false)
+    private int chatId;
+
     /**
      * The date and time when the message was sent.
      */
@@ -73,7 +76,7 @@ public class Message {
     /**
      * Gets the unique identifier for the message.
      *
-     * @return The message's unique identifier.
+     * @return The message's unique identifier.chatId
      */
     public int getId() {
         return id;
@@ -86,6 +89,14 @@ public class Message {
      */
     public void setId(int id) {
         this.id = id;
+    }
+
+
+    public int getChatId() {
+        return chatId;
+    }
+    public void setChatId(int chatId) {
+        this.chatId = chatId;
     }
 
     /**

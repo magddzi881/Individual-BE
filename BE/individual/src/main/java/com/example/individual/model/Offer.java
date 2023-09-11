@@ -36,6 +36,7 @@ public class Offer {
     /**
      * The username of the tutor associated with the offer.
      */
+
     @Column(name = "tutor_username", nullable = false)
     private String tutorUsername;
 
