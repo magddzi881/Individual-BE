@@ -20,6 +20,7 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+
     /**
      * Get all users.
      *
@@ -79,10 +80,14 @@ public class UserController {
                     .status(HttpStatus.BAD_REQUEST)
                     .body("Użytkownik o tej nazwie już istnieje."); // A bad request response with a message
         } else {
+
+
             User createdUser = userRepository.save(user);
             return ResponseEntity.ok(createdUser);
         }
     }
+
+
 
     /**
      * Update an existing user by username.
