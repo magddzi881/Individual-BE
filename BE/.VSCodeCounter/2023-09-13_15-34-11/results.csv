@@ -1,0 +1,35 @@
+"filename", "language", "Java Properties", "Java", "comment", "blank", "total"
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\DataInitializer.java", "Java", 0, 68, 10, 18, 96
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\EmailService.java", "Java", 0, 18, 0, 6, 24
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\IndividualApplication.java", "Java", 0, 10, 3, 5, 18
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\AccessController.java", "Java", 0, 57, 0, 13, 70
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\ChatController.java", "Java", 0, 112, 53, 26, 191
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\EmailController.java", "Java", 0, 48, 0, 15, 63
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\MessageController.java", "Java", 0, 79, 52, 16, 147
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\OfferController.java", "Java", 0, 86, 51, 20, 157
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\QuestionController.java", "Java", 0, 52, 0, 10, 62
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\QuizController.java", "Java", 0, 48, 0, 12, 60
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\RatingController.java", "Java", 0, 58, 33, 12, 103
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\StudyMaterialController.java", "Java", 0, 51, 0, 12, 63
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\UserController.java", "Java", 0, 97, 34, 27, 158
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Access.java", "Java", 0, 48, 1, 17, 66
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Chat.java", "Java", 0, 86, 114, 28, 228
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Message.java", "Java", 0, 67, 83, 25, 175
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Offer.java", "Java", 0, 86, 125, 31, 242
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Question.java", "Java", 0, 84, 1, 29, 114
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Quiz.java", "Java", 0, 57, 1, 21, 79
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Rating.java", "Java", 0, 47, 69, 18, 134
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\StudyMaterial.java", "Java", 0, 48, 1, 22, 71
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\User.java", "Java", 0, 92, 140, 33, 265
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\AccessRepository.java", "Java", 0, 18, 0, 6, 24
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\ChatRepository.java", "Java", 0, 18, 23, 7, 48
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\MessageRepository.java", "Java", 0, 14, 22, 8, 44
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\OfferRepository.java", "Java", 0, 14, 21, 7, 42
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\QuestionRepository.java", "Java", 0, 11, 0, 4, 15
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\QuizRepository.java", "Java", 0, 10, 0, 4, 14
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\RatingRepository.java", "Java", 0, 7, 3, 4, 14
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\StudyMaterialRepository.java", "Java", 0, 13, 0, 4, 17
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\UserRepository.java", "Java", 0, 10, 9, 4, 23
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\resources\application.properties", "Java Properties", 12, 0, 4, 4, 20
+"c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\test\java\com\example\individual\IndividualApplicationTests.java", "Java", 0, 9, 0, 5, 14
+"Total", "-", 12, 1523, 853, 473, 2861
