@@ -1,15 +1,15 @@
 package com.example.individual.controller;
 
-import com.example.individual.model.Chat;
 import com.example.individual.model.User;
 import com.example.individual.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
  * REST controller for managing users.
@@ -17,10 +17,15 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/users")
 public class UserController {
+
+
+
+
     @Autowired
     private UserRepository userRepository;
 
-
+    @Autowired
+    private PasswordEncoder passwordEncoder;
     /**
      * Get all users.
      *
@@ -28,7 +33,11 @@ public class UserController {
      */
     @GetMapping
     public List<User> getUsers() {
-        return userRepository.findAll();
+        List<User> users = userRepository.findAll();
+
+        users.forEach(user -> user.setPassword(null));
+
+        return users;
     }
 
     /**
@@ -37,7 +46,7 @@ public class UserController {
      * @param username The username of the user.
      * @return ResponseEntity containing the user if found, or a not-found response.
      */
-    @GetMapping("/{username}")
+    @GetMapping("old/{username}")
     public ResponseEntity<User> getUserByUsername(@PathVariable("username") String username) {
         User user = userRepository.findByUsername(username);
         if (user != null) {
@@ -46,8 +55,25 @@ public class UserController {
             return ResponseEntity.notFound().build();
         }
     }
+    @GetMapping("/{username}")
+    public ResponseEntity<?> getUser(@PathVariable String username, @RequestParam String password) {
+        User user = userRepository.findById(username).orElse(null);
+        if (user != null) {
 
+            String hashedPassword = user.getPassword();
+            boolean passwordMatch = passwordEncoder.matches(password, hashedPassword);
 
+            if (passwordMatch) {
+
+                return ResponseEntity.ok(user);
+            } else {
+
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Wrong password.");
+            }
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
 
     @PatchMapping("/{username}")
     public ResponseEntity<User> patchUser(@PathVariable("username") String username, @RequestBody User updatedUser) {
@@ -61,6 +87,8 @@ public class UserController {
         if (updatedUser.getPassword() != null && !updatedUser.getPassword().isEmpty()) {
             user.setPassword(updatedUser.getPassword());
         }
+        String hashedPassword = passwordEncoder.encode(user.getPassword());
+        user.setPassword(hashedPassword);
 
         User updated = userRepository.save(user);
         return ResponseEntity.ok(updated);
@@ -78,8 +106,10 @@ public class UserController {
         if (existingUser != null) {
             return ResponseEntity
                     .status(HttpStatus.BAD_REQUEST)
-                    .body("Użytkownik o tej nazwie już istnieje."); // A bad request response with a message
+                    .body(""); // A bad request response with a message
         } else {
+            String hashedPassword = passwordEncoder.encode(user.getPassword());
+            user.setPassword(hashedPassword);
 
 
             User createdUser = userRepository.save(user);
@@ -125,6 +155,8 @@ public class UserController {
             if (updatedUser.getRating() != 0.0) {
                 user.setRating(updatedUser.getRating());
             }
+            String hashedPassword = passwordEncoder.encode(user.getPassword());
+            user.setPassword(hashedPassword);
 
 
             User updated = userRepository.save(user);

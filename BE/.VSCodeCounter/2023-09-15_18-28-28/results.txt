@@ -1,0 +1,76 @@
+Date : 2023-09-15 18:28:28
+Directory : c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src
+Total : 36 files,  1686 codes, 856 comments, 514 blanks, all 3056 lines
+
+Languages
++-----------------+------------+------------+------------+------------+------------+
+| language        | files      | code       | comment    | blank      | total      |
++-----------------+------------+------------+------------+------------+------------+
+| Java            |         35 |      1,674 |        852 |        510 |      3,036 |
+| Java Properties |          1 |         12 |          4 |          4 |         20 |
++-----------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                                | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                                   |         36 |      1,686 |        856 |        514 |      3,056 |
+| main                                                                                                                                |         35 |      1,677 |        856 |        509 |      3,042 |
+| main\java                                                                                                                           |         34 |      1,665 |        852 |        505 |      3,022 |
+| main\java\com                                                                                                                       |         34 |      1,665 |        852 |        505 |      3,022 |
+| main\java\com\example                                                                                                               |         34 |      1,665 |        852 |        505 |      3,022 |
+| main\java\com\example\individual                                                                                                    |         34 |      1,665 |        852 |        505 |      3,022 |
+| main\java\com\example\individual (Files)                                                                                            |          3 |         95 |         13 |         29 |        137 |
+| main\java\com\example\individual\controller                                                                                         |         11 |        760 |        224 |        178 |      1,162 |
+| main\java\com\example\individual\model                                                                                              |         10 |        683 |        537 |        244 |      1,464 |
+| main\java\com\example\individual\repository                                                                                         |         10 |        127 |         78 |         54 |        259 |
+| main\resources                                                                                                                      |          1 |         12 |          4 |          4 |         20 |
+| test                                                                                                                                |          1 |          9 |          0 |          5 |         14 |
+| test\java                                                                                                                           |          1 |          9 |          0 |          5 |         14 |
+| test\java\com                                                                                                                       |          1 |          9 |          0 |          5 |         14 |
+| test\java\com\example                                                                                                               |          1 |          9 |          0 |          5 |         14 |
+| test\java\com\example\individual                                                                                                    |          1 |          9 |          0 |          5 |         14 |
++-------------------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| filename                                                                                                                            | language        | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\DataInitializer.java                    | Java            |         68 |         10 |         18 |         96 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\EmailService.java                       | Java            |         18 |          0 |          6 |         24 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\IndividualApplication.java              | Java            |          9 |          3 |          5 |         17 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\AccessController.java        | Java            |         57 |          0 |         13 |         70 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\ChatController.java          | Java            |        112 |         53 |         26 |        191 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\EmailController.java         | Java            |         48 |          0 |         15 |         63 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\MessageController.java       | Java            |         79 |         52 |         16 |        147 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\OfferController.java         | Java            |         86 |         51 |         20 |        157 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\QuestionController.java      | Java            |         52 |          0 |         10 |         62 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\QuizController.java          | Java            |         48 |          0 |         12 |         60 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\RatingController.java        | Java            |         58 |         33 |         12 |        103 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\ScheduleController.java      | Java            |         72 |          1 |         15 |         88 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\StudyMaterialController.java | Java            |         51 |          0 |         12 |         63 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\controller\UserController.java          | Java            |         97 |         34 |         27 |        158 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Access.java                       | Java            |         48 |          1 |         17 |         66 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Chat.java                         | Java            |         86 |        114 |         28 |        228 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Message.java                      | Java            |         67 |         83 |         25 |        175 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Offer.java                        | Java            |         86 |        125 |         31 |        242 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Question.java                     | Java            |         84 |          1 |         29 |        114 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Quiz.java                         | Java            |         57 |          1 |         21 |         79 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Rating.java                       | Java            |         47 |         69 |         18 |        134 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\Schedule.java                     | Java            |         68 |          2 |         20 |         90 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\StudyMaterial.java                | Java            |         48 |          1 |         22 |         71 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\model\User.java                         | Java            |         92 |        140 |         33 |        265 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\AccessRepository.java        | Java            |         18 |          0 |          6 |         24 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\ChatRepository.java          | Java            |         18 |         23 |          7 |         48 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\MessageRepository.java       | Java            |         14 |         22 |          8 |         44 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\OfferRepository.java         | Java            |         14 |         21 |          7 |         42 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\QuestionRepository.java      | Java            |         11 |          0 |          4 |         15 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\QuizRepository.java          | Java            |         10 |          0 |          4 |         14 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\RatingRepository.java        | Java            |          7 |          3 |          4 |         14 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\ScheduleRepository.java      | Java            |         12 |          0 |          6 |         18 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\StudyMaterialRepository.java | Java            |         13 |          0 |          4 |         17 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\java\com\example\individual\repository\UserRepository.java          | Java            |         10 |          9 |          4 |         23 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\main\resources\application.properties                                    | Java Properties |         12 |          4 |          4 |         20 |
+| c:\Users\Lenovo\Desktop\Polsl\Inzynierka\BE\individual\src\test\java\com\example\individual\IndividualApplicationTests.java         | Java            |          9 |          0 |          5 |         14 |
+| Total                                                                                                                               |                 |      1,686 |        856 |        514 |      3,056 |
++-------------------------------------------------------------------------------------------------------------------------------------+-----------------+------------+------------+------------+------------+

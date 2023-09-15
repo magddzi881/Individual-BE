@@ -6,6 +6,7 @@ import com.example.individual.repository.OfferRepository;
 import com.example.individual.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import java.text.ParseException;
@@ -22,7 +23,8 @@ public class DataInitializer implements CommandLineRunner {
 
     @Autowired
     private UserRepository userRepository;
-
+    @Autowired
+    private PasswordEncoder passwordEncoder;
     @Autowired
     private OfferRepository offerRepository;
 
@@ -32,20 +34,22 @@ public class DataInitializer implements CommandLineRunner {
         if (userRepository.count() == 0) {
 
 
+
             List<User> users = Arrays.asList(
-                    new User("user1", "user1email@mailhog.com", "1", "Sabrina", "Dorn", "2004", "F", 1, 0.0),
-                    new User("user2", "user2email@mailhog.com", "2", "John", "Smith", "1990", "M", 5, 0.0),
-                    new User("user3", "user3email@mailhog.com", "3", "Michael", "Johnson", "1985", "M", 6, 0.0),
-                    new User("user4", "user4email@mailhog.com", "4", "Emma", "Brown", "1999", "F", 2, 0.0),
-                    new User("user5", "user5@mailhog.com", "5", "William", "Jones", "1976", "M", 7, 0.0),
-                    new User("user6", "user6@mailhog.com", "6", "Olivia", "Davis", "1992", "F", 3, 0.0),
-                    new User("user7", "user7@mailhog.com", "7", "James", "Miller", "2001", "M", 8, 0.0),
-                    new User("user8", "user8@mailhog.com", "8", "Ava", "Wilson", "1988", "F", 4, 0.0),
-                    new User("user9", "user9@mailhog.com", "9", "Benjamin", "Moore", "1979", "M", 11, 0.0),
-                    new User("user10", "user10@mailhog.com", "10", "Sophia", "Anderson", "1996", "F", 10, 0.0),
-                    new User("user11", "user11@mailhog.com", "11", "Ethan", "Taylor", "2008", "M", 12, 0.0),
-                    new User("user12", "user12@mailhog.com", "12", "Lily", "Clark", "1994", "F", 9, 0.0)
+                    new User("user1", "user1email@mailhog.com", passwordEncoder.encode("1"), "Sabrina", "Dorn", "2004", "F", 1, 0.0),
+                    new User("user2", "user2email@mailhog.com", passwordEncoder.encode("2"), "John", "Smith", "1990", "M", 5, 0.0),
+                    new User("user3", "user3email@mailhog.com", passwordEncoder.encode("3"), "Michael", "Johnson", "1985", "M", 6, 0.0),
+                    new User("user4", "user4email@mailhog.com", passwordEncoder.encode("4"), "Emma", "Brown", "1999", "F", 2, 0.0),
+                    new User("user5", "user5@mailhog.com", passwordEncoder.encode("5"), "William", "Jones", "1976", "M", 7, 0.0),
+                    new User("user6", "user6@mailhog.com", passwordEncoder.encode("6"), "Olivia", "Davis", "1992", "F", 3, 0.0),
+                    new User("user7", "user7@mailhog.com", passwordEncoder.encode("7"), "James", "Miller", "2001", "M", 8, 0.0),
+                    new User("user8", "user8@mailhog.com", passwordEncoder.encode("8"), "Ava", "Wilson", "1988", "F", 4, 0.0),
+                    new User("user9", "user9@mailhog.com", passwordEncoder.encode("9"), "Benjamin", "Moore", "1979", "M", 11, 0.0),
+                    new User("user10", "user10@mailhog.com", passwordEncoder.encode("10"), "Sophia", "Anderson", "1996", "F", 10, 0.0),
+                    new User("user11", "user11@mailhog.com", passwordEncoder.encode("11"), "Ethan", "Taylor", "2008", "M", 12, 0.0),
+                    new User("user12", "user12@mailhog.com", passwordEncoder.encode("12"), "Lily", "Clark", "1994", "F", 9, 0.0)
             );
+
 
 
             userRepository.saveAll(users);
